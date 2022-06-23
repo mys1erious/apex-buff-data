@@ -1,0 +1,246 @@
+{
+    "legends": [
+        {
+            "name": "Ash",
+            "icon": null,
+            "role": "Incisive Instigator",
+            "real_name": "Dr. Ashleigh Reid",
+            "gender": "f",
+            "age": 121,
+            "homeworld": "Unknown",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Bangalore",
+            "icon": null,
+            "role": "Professional Soldier",
+            "real_name": "Anita Williams",
+            "gender": "f",
+            "age": 38,
+            "homeworld": "Gridiron",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Bloodhound",
+            "icon": null,
+            "role": "Technological Tracker",
+            "real_name": "Bl\u00f3dhundr",
+            "gender": "nb",
+            "age": 30,
+            "homeworld": "Talos",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Caustic",
+            "icon": null,
+            "role": "Toxic Trapper",
+            "real_name": "Alexander Maxwell Nox",
+            "gender": "m",
+            "age": 49,
+            "homeworld": "Gaea",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Crypto",
+            "icon": null,
+            "role": "Surveillance Expert",
+            "real_name": "Tae Joon Park (\ubc15\ud0dc\uc900)",
+            "gender": "m",
+            "age": 2,
+            "homeworld": "Gaea",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Fade",
+            "icon": null,
+            "role": "Phasing Punisher",
+            "real_name": "Ignacio Huaman\u00ed",
+            "gender": "m",
+            "age": 26,
+            "homeworld": "Solace",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Fuse",
+            "icon": null,
+            "role": "Explosives Enthusiast",
+            "real_name": "Walter Fitzroy Jr.[2]",
+            "gender": "m",
+            "age": 54,
+            "homeworld": "Salvo",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Gibraltar",
+            "icon": null,
+            "role": "Shielded Fortress",
+            "real_name": "Makoa Gibraltar",
+            "gender": "m",
+            "age": 30,
+            "homeworld": "Solace",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Horizon",
+            "icon": null,
+            "role": "Gravitational Manipulator",
+            "real_name": "Dr. Mary Somers",
+            "gender": "f",
+            "age": 37,
+            "homeworld": "Psamathe",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Lifeline",
+            "icon": null,
+            "role": "Combat Medic",
+            "real_name": "Ajay Che",
+            "gender": "f",
+            "age": 24,
+            "homeworld": "Psamathe",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Loba",
+            "icon": null,
+            "role": "Translocating Thief",
+            "real_name": "Loba Andrade",
+            "gender": "f",
+            "age": 34,
+            "homeworld": "None",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Mad Maggie",
+            "icon": null,
+            "role": "Rebel Warlord",
+            "real_name": "Margaret K\u014dhere",
+            "gender": "f",
+            "age": 1,
+            "homeworld": "Salvo",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Mirage",
+            "icon": null,
+            "role": "Holographic Trickster",
+            "real_name": "Elliott Rodger Witt",
+            "gender": "m",
+            "age": 30,
+            "homeworld": "Solace",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Newcastle",
+            "icon": null,
+            "role": "Mobile Guardian",
+            "real_name": "Jackson Williams",
+            "gender": "m",
+            "age": 40,
+            "homeworld": "Gridiron",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Octane",
+            "icon": null,
+            "role": "High-Speed Daredevil",
+            "real_name": "Octavio Silva",
+            "gender": "m",
+            "age": 24,
+            "homeworld": "Psamathe",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Pathfinder",
+            "icon": null,
+            "role": "Forward Scout",
+            "real_name": "MRVN",
+            "gender": "m",
+            "age": 76,
+            "homeworld": "Psamathe",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Rampart",
+            "icon": null,
+            "role": "Base of Fire",
+            "real_name": "Ramya Parekh",
+            "gender": "f",
+            "age": 21,
+            "homeworld": "Gaea",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Revenant",
+            "icon": null,
+            "role": "Synthetic Nightmare",
+            "real_name": "Kaleb Cross[2]",
+            "gender": "m",
+            "age": 313,
+            "homeworld": "Solace",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Seer",
+            "icon": null,
+            "role": "Ambush Artist",
+            "real_name": "Obi Edolasim",
+            "gender": "m",
+            "age": 26,
+            "homeworld": "Boreas",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Valkyrie",
+            "icon": null,
+            "role": "Winged Avenger",
+            "real_name": "Kairi Imahara (\u4eca\u539f\u30ab\u30a4\u30ea)",
+            "gender": "f",
+            "age": 30,
+            "homeworld": "Angelia",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Wattson",
+            "icon": null,
+            "role": "Static Defender",
+            "real_name": "Natalie Paquette",
+            "gender": "f",
+            "age": 22,
+            "homeworld": "Solace",
+            "legend_type": null,
+            "lore": null
+        },
+        {
+            "name": "Wraith",
+            "icon": null,
+            "role": "Interdimensional Skirmisher",
+            "real_name": "Renee Hope Blasey[1]",
+            "gender": "f",
+            "age": 32,
+            "homeworld": "Typhon[2]",
+            "legend_type": null,
+            "lore": null
+        }
+    ]
+}
