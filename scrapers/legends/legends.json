@@ -8,7 +8,7 @@
             "gender": "f",
             "age": 121,
             "homeworld": "Unknown",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -19,7 +19,7 @@
             "gender": "f",
             "age": 38,
             "homeworld": "Gridiron",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -30,7 +30,7 @@
             "gender": "nb",
             "age": 30,
             "homeworld": "Talos",
-            "legend_type": null,
+            "legend_type": "recon",
             "lore": null
         },
         {
@@ -41,7 +41,7 @@
             "gender": "m",
             "age": 49,
             "homeworld": "Gaea",
-            "legend_type": null,
+            "legend_type": "defensive",
             "lore": null
         },
         {
@@ -50,9 +50,9 @@
             "role": "Surveillance Expert",
             "real_name": "Tae Joon Park (\ubc15\ud0dc\uc900)",
             "gender": "m",
-            "age": 2,
+            "age": 22,
             "homeworld": "Gaea",
-            "legend_type": null,
+            "legend_type": "recon",
             "lore": null
         },
         {
@@ -63,7 +63,7 @@
             "gender": "m",
             "age": 26,
             "homeworld": "Solace",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -74,7 +74,7 @@
             "gender": "m",
             "age": 54,
             "homeworld": "Salvo",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -85,7 +85,7 @@
             "gender": "m",
             "age": 30,
             "homeworld": "Solace",
-            "legend_type": null,
+            "legend_type": "defensive",
             "lore": null
         },
         {
@@ -96,7 +96,7 @@
             "gender": "f",
             "age": 37,
             "homeworld": "Psamathe",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -107,7 +107,7 @@
             "gender": "f",
             "age": 24,
             "homeworld": "Psamathe",
-            "legend_type": null,
+            "legend_type": "support",
             "lore": null
         },
         {
@@ -118,7 +118,7 @@
             "gender": "f",
             "age": 34,
             "homeworld": "None",
-            "legend_type": null,
+            "legend_type": "support",
             "lore": null
         },
         {
@@ -127,9 +127,9 @@
             "role": "Rebel Warlord",
             "real_name": "Margaret K\u014dhere",
             "gender": "f",
-            "age": 1,
+            "age": 55,
             "homeworld": "Salvo",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -140,7 +140,7 @@
             "gender": "m",
             "age": 30,
             "homeworld": "Solace",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -151,7 +151,7 @@
             "gender": "m",
             "age": 40,
             "homeworld": "Gridiron",
-            "legend_type": null,
+            "legend_type": "defensive",
             "lore": null
         },
         {
@@ -162,7 +162,7 @@
             "gender": "m",
             "age": 24,
             "homeworld": "Psamathe",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -173,7 +173,7 @@
             "gender": "m",
             "age": 76,
             "homeworld": "Psamathe",
-            "legend_type": null,
+            "legend_type": "recon",
             "lore": null
         },
         {
@@ -184,7 +184,7 @@
             "gender": "f",
             "age": 21,
             "homeworld": "Gaea",
-            "legend_type": null,
+            "legend_type": "defensive",
             "lore": null
         },
         {
@@ -195,7 +195,7 @@
             "gender": "m",
             "age": 313,
             "homeworld": "Solace",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         },
         {
@@ -206,7 +206,7 @@
             "gender": "m",
             "age": 26,
             "homeworld": "Boreas",
-            "legend_type": null,
+            "legend_type": "recon",
             "lore": null
         },
         {
@@ -217,7 +217,7 @@
             "gender": "f",
             "age": 30,
             "homeworld": "Angelia",
-            "legend_type": null,
+            "legend_type": "recon",
             "lore": null
         },
         {
@@ -228,7 +228,7 @@
             "gender": "f",
             "age": 22,
             "homeworld": "Solace",
-            "legend_type": null,
+            "legend_type": "defensive",
             "lore": null
         },
         {
@@ -239,7 +239,7 @@
             "gender": "f",
             "age": 32,
             "homeworld": "Typhon[2]",
-            "legend_type": null,
+            "legend_type": "offensive",
             "lore": null
         }
     ]

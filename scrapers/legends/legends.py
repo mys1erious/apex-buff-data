@@ -7,8 +7,8 @@ import json
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
-from data.scrapers.utils.constants import *
-from data.scrapers.utils.utils import (
+from scrapers.utils.constants import *
+from scrapers.utils.utils import (
     BaseDataclass,
     BaseScraper,
     wait_for
@@ -110,14 +110,9 @@ class LegendsScraper(BaseScraper):
             if attr_name in legend_obj.field_names:
                 attr_value = row.find_element(by=By.XPATH, value='.//td[@class="infobox-row-value"]').text
 
-                # Getting last integer from age row
+                # Getting max integer from age row
                 if attr_name == 'age':
-                    attr_value = re.findall(r'\d+', attr_value)[-1]
-                    attr_value = int(attr_value)
-
-                # For now changing legend_type to None due to not having LegendType Model objects
-                if attr_name == 'legend_type':
-                    attr_value = None
+                    attr_value = max(map(int, re.findall(r'\d+', attr_value)))
 
                 # Changing gender to its abbreviation
                 if attr_name == 'gender':
@@ -127,6 +122,10 @@ class LegendsScraper(BaseScraper):
                         attr_value = 'f'
                     if attr_value == 'Non-binary':
                         attr_value = 'nb'
+
+                # Changing legend_type to lowercase
+                if attr_name == 'legend_type':
+                    attr_value = attr_value.lower()
 
                 legend_obj.__setattr__(attr_name, attr_value)
 
@@ -155,6 +154,7 @@ class LegendsScraper(BaseScraper):
     def export_legends_to_json(self):
         data = {'legends': [legend.to_dict() for legend in self.legends_list]}
 
+        LEGENDS_JSON = 'legends.json'
         with open(LEGENDS_JSON, 'w') as f:
             json.dump(data, f, indent=4)
 
