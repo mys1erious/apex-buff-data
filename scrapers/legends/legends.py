@@ -69,16 +69,20 @@ class LegendsScraper(BaseScraper):
         self.scrape()
         self.export_legends_to_json()
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        super().__exit__(exc_type, exc_val, exc_tb)
-
     def scrape(self):
         self.browser.get(self.apex_wiki_base_url)
         self.accept_cookies()
 
-        legends_hrefs = self.get_legends_hrefs()
+        legends = self.get_legends_list()
 
-        for legend_href in legends_hrefs:
+        legend_names = self.get_legend_names(legends)
+        legend_image_links = self.get_links_to_images(legends)
+        legend_hrefs = self.get_legends_hrefs(legends)
+
+        self.download_legend_image(legend_names, legend_image_links)
+
+        return
+        for legend_href in legend_hrefs:
             self.browser.get(legend_href)
             self.wait_for_redirect(legend_href)
             legend_obj = Legend()
@@ -89,7 +93,12 @@ class LegendsScraper(BaseScraper):
             self.set_legend_info_from_infobox_table(legend_obj)
 
             self.legends_list.append(legend_obj)
-            print(legend_obj)
+
+    def download_legend_image(self, names, links):
+        for name, link in zip(names, links):
+            self.browser.get(link)
+            self.browser.save_screenshot(f'./legend images/{name}.png')
+
 
     def set_legend_info_from_infobox_table(self, legend_obj):
         legend_obj.name = self.infobox_table.find_element(
@@ -129,9 +138,41 @@ class LegendsScraper(BaseScraper):
 
                 legend_obj.__setattr__(attr_name, attr_value)
 
-    def get_legends_hrefs(self):
+    def get_legend_names(self, legends):
+        names = []
+        for legend in legends:
+            name = legend.find_element(by=By.TAG_NAME, value='a').get_attribute('title')
+            name = name.replace(' ', '_')
+            names.append(name)
+        return names
+
+    def get_links_to_images(self, legends):
+        links = []
+
+        y_scroll_step = 100
+        scroll_to_y = y_scroll_step
+        for legend in legends:
+
+            wait_for(
+                lambda: legend.find_element(by=By.TAG_NAME, value='img')
+                            .get_attribute('src')
+                            .startswith('https://') is True
+            )
+            full_link = legend.find_element(by=By.TAG_NAME, value='img').get_attribute('src')
+
+            self.browser.execute_script(f'window.scrollTo(0, {scroll_to_y})')
+            scroll_to_y += y_scroll_step
+
+            end_pattern = '.png'
+            end = full_link.find('.png') + len(end_pattern)
+
+            link = full_link[:end]
+            links.append(link)
+
+        return links
+
+    def get_legends_hrefs(self, legends):
         hrefs = []
-        legends = self.get_legends_list()
 
         for legend in legends:
             href = legend.find_element(by=By.TAG_NAME, value='a').get_attribute('href')
@@ -140,8 +181,8 @@ class LegendsScraper(BaseScraper):
         return hrefs
 
     def get_legends_list(self):
-        container = self.browser \
-            .find_element(by=By.ID, value='fp-1') \
+        container = self.browser\
+            .find_element(by=By.ID, value='fp-1')\
             .find_element(by=By.CLASS_NAME, value='fplinks')
         legends = container.find_elements(by=By.XPATH, value='.//div[@class="fplink-outer plainlinks"]')
 
@@ -154,11 +195,13 @@ class LegendsScraper(BaseScraper):
     def export_legends_to_json(self):
         data = {'legends': [legend.to_dict() for legend in self.legends_list]}
 
+        # For now with dummy-hardcoded path
         LEGENDS_JSON = 'legends.json'
+        ABILITIES_JSON = 'abilities.json'
+
         with open(LEGENDS_JSON, 'w') as f:
             json.dump(data, f, indent=4)
 
 
 if __name__ == '__main__':
     LegendsScraper()
-
