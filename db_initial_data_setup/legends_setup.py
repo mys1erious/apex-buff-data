@@ -51,7 +51,7 @@ def post_legends(url, data):
 
 
 def setup():
-    url = LOCAL_BASE_API_URL  # Change this url depending on which base url u want to use
+    url = HEROKU_DEV_BASE_API_URL  # Change this url depending on which base url u want to use
         # (later rework for auto data adding)
 
     data = legends_data_from_file(PATH_TO_LEGENDS_JSON)

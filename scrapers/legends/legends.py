@@ -10,9 +10,22 @@ from selenium.webdriver.common.by import By
 from scrapers.utils.constants import *
 from scrapers.utils.utils import (
     BaseDataclass,
-    BaseScraper,
-    wait_for
+    BaseScraper
 )
+
+
+@dataclass
+class Ability(BaseDataclass):
+    character_name: str
+    name: str
+    icon: str
+    ability_type: str
+    description: str
+    cooldown: str
+    info: str
+
+    def __init__(self):
+        super().__init__()
 
 
 @dataclass
@@ -25,29 +38,14 @@ class Legend(BaseDataclass):
     age: int
     homeworld: str
     legend_type: str
+    abilities = list[Ability]
     lore: str
 
     def __init__(self):
         super().__init__()
 
 
-@dataclass
-class Ability(BaseDataclass):
-    character_name: str
-    name: str
-    icon: str
-    ability_type: str
-    description: str
-    cooldown: float
-    info: str
-    interactions: str
-    tips: str
-    arenas: str
-
-    def __init__(self):
-        super().__init__()
-
-
+# Split for Legend main info and Images
 class LegendsScraper(BaseScraper):
     """
     For now scrapes:
@@ -67,7 +65,7 @@ class LegendsScraper(BaseScraper):
         self.legends_list = []
 
         self.scrape()
-        self.export_legends_to_json()
+        #self.export_legends_to_json()
 
     def scrape(self):
         self.browser.get(self.apex_wiki_base_url)
@@ -79,26 +77,67 @@ class LegendsScraper(BaseScraper):
         legend_image_links = self.get_links_to_images(legends)
         legend_hrefs = self.get_legends_hrefs(legends)
 
-        self.download_legend_image(legend_names, legend_image_links)
+        # self.download_legend_image(legend_names, legend_image_links)
 
-        return
         for legend_href in legend_hrefs:
             self.browser.get(legend_href)
             self.wait_for_redirect(legend_href)
             legend_obj = Legend()
 
-            self.infobox_table = wait_for(
+            self.infobox_table = self.wait_for(
                 lambda: self.browser.find_element(by=By.XPATH, value='//table[@class="infobox-table"]')
             )
             self.set_legend_info_from_infobox_table(legend_obj)
 
+            legend_obj = self.get_legend_abilities(legend_obj)
             self.legends_list.append(legend_obj)
+
+    def get_legend_abilities(self, legend_obj):
+        abilities_list = []
+        abilities = self.browser.find_elements(by=By.CLASS_NAME, value='ability-container')
+
+        for ability in abilities:
+            ability_obj = Ability()
+
+            table = ability.find_element(by=By.CSS_SELECTOR, value='table[class="wikitable ability"]')
+
+            ability_obj.character_name = legend_obj.name
+            ability_obj.ability_type = table.find_element(by=By.XPATH, value='./tbody/tr[1]/th[1]').text.lower()
+            ability_obj.name = table.find_element(by=By.XPATH, value='./tbody/tr[2]/th').text.title()
+            ability_obj.description = table.find_element(by=By.XPATH, value='./tbody/tr[3]/td').text
+            ability_obj.cooldown = table.find_element(by=By.XPATH, value='./tbody/tr[4]/td').text
+
+            full_link = table.find_element(by=By.XPATH, value='./tbody/tr[1]/td/a').get_attribute('href')
+            end_pattern = '.svg'
+            end = full_link.find(end_pattern) + len(end_pattern)
+            link = full_link[:end]
+            ability_obj.icon = link
+
+            tabber = ability.find_element(
+                by=By.CLASS_NAME,
+                value='tabber-ability'
+            )
+
+            # For now only if Info tab is selected by default
+            selected_tab = tabber.find_element(by=By.CLASS_NAME, value='wds-is-current').text.lower()
+            if selected_tab == 'info':
+                info_content = tabber.find_element(
+                    by=By.CSS_SELECTOR,
+                    value='div[class="wds-tab__content wds-is-current"]'
+                ).text
+                ability_obj.info = info_content
+            else:
+                ability_obj.info = None
+
+            abilities_list.append(ability_obj)
+
+        legend_obj.abilities = abilities_list
+        return legend_obj
 
     def download_legend_image(self, names, links):
         for name, link in zip(names, links):
             self.browser.get(link)
             self.browser.save_screenshot(f'./legend images/{name}.png')
-
 
     def set_legend_info_from_infobox_table(self, legend_obj):
         legend_obj.name = self.infobox_table.find_element(
@@ -153,7 +192,7 @@ class LegendsScraper(BaseScraper):
         scroll_to_y = y_scroll_step
         for legend in legends:
 
-            wait_for(
+            self.wait_for(
                 lambda: legend.find_element(by=By.TAG_NAME, value='img')
                             .get_attribute('src')
                             .startswith('https://') is True
@@ -164,7 +203,7 @@ class LegendsScraper(BaseScraper):
             scroll_to_y += y_scroll_step
 
             end_pattern = '.png'
-            end = full_link.find('.png') + len(end_pattern)
+            end = full_link.find(end_pattern) + len(end_pattern)
 
             link = full_link[:end]
             links.append(link)
@@ -189,7 +228,7 @@ class LegendsScraper(BaseScraper):
         return legends
 
     def accept_cookies(self):
-        accept_btn = wait_for(lambda: self.browser.find_element(by=By.CSS_SELECTOR, value='.NN0_TB_DIsNmMHgJWgT7U'))
+        accept_btn = self.wait_for(lambda: self.browser.find_element(by=By.CSS_SELECTOR, value='.NN0_TB_DIsNmMHgJWgT7U'))
         accept_btn.click()
 
     def export_legends_to_json(self):
