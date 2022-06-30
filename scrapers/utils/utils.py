@@ -27,21 +27,20 @@ def wait(fn):
     return modified_fn
 
 
-@wait
-def wait_for(fn):
-    return fn()
-
-
 class BaseScraper:
     def __init__(self):
-        self.browser = webdriver.Firefox()
+        self.browser = lambda: webdriver.Firefox()
+
+    def assert_func(self, item1, item2):
+        assert item1, item2
+
+    @wait
+    def wait_for(self, fn):
+        return fn()
 
     @wait
     def wait_for_redirect(self, new_url):
         assert self.browser.current_url, new_url
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        self.browser.quit()
 
 
 @dataclass

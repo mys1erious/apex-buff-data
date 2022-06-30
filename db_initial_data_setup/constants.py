@@ -5,4 +5,4 @@ PATH_TO_LEGENDS_JSON = '../scrapers/legends/legends.json'
 
 
 ADMIN_USERNAME = 'admin'
-ADMIN_PASSWORD = 'admin'
+ADMIN_PASSWORD = 'test4321'
