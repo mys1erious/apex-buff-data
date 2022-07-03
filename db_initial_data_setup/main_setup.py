@@ -1,3 +1,4 @@
+import re
 
 from legends_setup import setup as legends_setup
 

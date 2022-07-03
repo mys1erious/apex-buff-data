@@ -6,7 +6,7 @@ from dataclasses import dataclass, fields
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
-from scrapers.utils.constants import *
+from constants import *
 from scrapers.utils.utils import (
     BaseDataclass,
     BaseScraper

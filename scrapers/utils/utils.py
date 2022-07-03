@@ -10,7 +10,7 @@ import json
 from selenium import webdriver
 from selenium.common import WebDriverException
 
-from .constants import *
+from constants import *
 
 
 def wait(fn):
