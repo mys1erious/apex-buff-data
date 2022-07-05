@@ -6,6 +6,7 @@ from dataclasses import (
     asdict
 )
 import json
+import cv2
 
 from selenium import webdriver
 from selenium.common import WebDriverException
@@ -64,3 +65,17 @@ class BaseDataclass:
             data[field.name] = getattr(self, field.name)
 
         return data
+
+
+def merge_legend_img_bg(path):
+    img = cv2.imread(path)
+
+    h, w = img.shape[:2]
+
+    white_bg = [225, 225, 225]
+    img[0:91, 0:w] = white_bg
+    img[0:h, 0:630] = white_bg
+    img[0:h, w-630:w] = white_bg
+    img[h-91:h, 0:w] = white_bg
+
+    cv2.imwrite(path, img)

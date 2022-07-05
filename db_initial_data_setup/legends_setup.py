@@ -5,6 +5,7 @@ import requests
 import json
 
 from constants import *
+from scrapers.utils.utils import merge_legend_img_bg
 
 
 def legends_data_from_file(file):
@@ -91,13 +92,16 @@ def post_legends(url, data):
 
 
 def setup():
-    url = LOCAL_BASE_API_URL  # Change this url depending on which base url u want to use
+    url = HEROKU_DEV_BASE_API_URL  # Change this url depending on which base url u want to use
         # (later rework for auto data adding)
 
     data = legends_data_from_file(LEGENDS_JSON)
 
+    # Prep images
+    # for legend in data['legends']:
+    #     merge_legend_img_bg(os.path.join(LEGEND_IMAGES_DIR, f'{legend["name"]}.png'))
+
     post_legends(url + '/legends/', data)
-    ...
 
 
 if __name__ == '__main__':
