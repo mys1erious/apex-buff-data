@@ -1,9 +1,8 @@
+import re
 import time
 from dataclasses import (
     dataclass,
-    fields,
-    is_dataclass,
-    asdict
+    fields
 )
 import json
 import cv2
@@ -12,6 +11,40 @@ from selenium import webdriver
 from selenium.common import WebDriverException
 
 from constants import *
+
+
+def cut_to_end_pattern(text, patterns, include_pattern=True):
+    for pattern in patterns:
+        n = len(pattern)
+        ind = text.find(pattern)
+
+        if include_pattern:
+            ind += n
+
+        if ind > n:
+            return text[:ind]
+
+    return ''
+
+
+def slugify(s):
+    s = s.lower().strip()
+    s = re.sub(r'[^\w\s-]', '', s)
+    s = re.sub(r'[\s_-]+', '-', s)
+    s = re.sub(r'^-+|-+$', '', s)
+    return s
+
+
+def save_to_json(path, data):
+    with open(path, 'w') as outfile:
+        json.dump(data, outfile, indent=2)
+
+
+def load_json_data(file):
+    with open(file, 'r') as f:
+        data = json.load(f)
+
+        return data
 
 
 def wait(fn):
@@ -65,17 +98,3 @@ class BaseDataclass:
             data[field.name] = getattr(self, field.name)
 
         return data
-
-
-def merge_legend_img_bg(path):
-    img = cv2.imread(path)
-
-    h, w = img.shape[:2]
-
-    white_bg = [225, 225, 225]
-    img[0:91, 0:w] = white_bg
-    img[0:h, 0:630] = white_bg
-    img[0:h, w-630:w] = white_bg
-    img[h-91:h, 0:w] = white_bg
-
-    cv2.imwrite(path, img)

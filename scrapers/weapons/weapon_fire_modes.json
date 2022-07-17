@@ -1,0 +1,24 @@
+{
+  "fire_modes": [
+    {
+      "name": "Auto",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
+    },
+    {
+      "name": "Single",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
+    },
+    {
+      "name": "3-round burst",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg"
+    },
+    {
+      "name": "5-round burst",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg"
+    },
+    {
+      "name": "2-round burst",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg"
+    }
+  ]
+}
