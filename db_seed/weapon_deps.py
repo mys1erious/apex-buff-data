@@ -89,45 +89,44 @@ def dummy_special_data():
     return data
 
 
-def post_special(url, special):
-    img_path = ...
+# def post_special(url, special):
+#     img_path = ...
+#
+#     with open(img_path, 'rb') as img:
+#         response = requests.post(
+#             url=url,
+#             data=data,
+#             files={'icon': img},
+#             auth=(ADMIN_USERNAME, ADMIN_PASSWORD)
+#         )
+#         if not response.ok:
+#             print(data['name'], response)
+#
+#
+# def post_specials(url, data):
+#     data = dummy_special_data()
+#     for item in data['specials']:
+#         post_special(url, item)
 
-    with open(img_path, 'rb') as img:
-        response = requests.post(
-            url=url,
-            data=data,
-            files={'icon': img},
-            auth=(ADMIN_USERNAME, ADMIN_PASSWORD)
-        )
-        if not response.ok:
-            print(data['name'], response)
 
-def post_specials(url, data):
-    data = dummy_special_data()
-    for item in data['specials']:
-        post_special(url, item)
+def seed():
+    url = LOCAL_BASE_API_URL
+    weapons_data = load_json_data(WEAPONS_JSON)
 
+    # post_attachments(
+    #     url+'/attachments/',
+    #     load_json_data(WEAPONS_DIR + '/weapon_attachments.json')
+    # )
+    # post_ammo_types(
+    #     url+'/ammo/', load_json_data(WEAPONS_DIR+'/weapon_ammo.json')
+    # )
+    # post_fire_modes(
+    #     url+'/fire_modes/',
+    #     load_json_data(WEAPONS_DIR + '/weapon_fire_modes.json')
+    # )
 
-def setup(run=False):
-    if run:
-        url = LOCAL_BASE_API_URL
-        weapons_data = load_json_data(WEAPONS_JSON)
-
-        print(dummy_special_data())
-        # post_attachments(
-        #     url+'/attachments/',
-        #     load_json_data(WEAPONS_DIR + '/weapon_attachments.json')
-        # )
-        # post_ammo_types(
-        #     url+'/ammo/', load_json_data(WEAPONS_DIR+'/weapon_ammo.json')
-        # )
-        # post_fire_modes(
-        #     url+'/fire_modes/',
-        #     load_json_data(WEAPONS_DIR + '/weapon_fire_modes.json')
-        # )
-    else:
-        raise ValueError('`run` is False.')
 
 
 if __name__ == '__main__':
-    setup(run=True)
+    ...
+    seed()

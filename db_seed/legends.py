@@ -109,16 +109,20 @@ def post_legends(url, data):
             print(f'{i}. {legend["name"]}: Success')
 
 
-def setup():
+def prep_legend_images(data):
+    for legend in data['legends']:
+        merge_legend_img_bg(os.path.join(LEGEND_IMAGES_DIR, f'{legend["name"]}.png'))
+
+
+def seed():
     url = LOCAL_BASE_API_URL
     data = legends_data_from_file(LEGENDS_JSON)
 
-    # Prep images
-    # for legend in data['legends']:
-    #     merge_legend_img_bg(os.path.join(LEGEND_IMAGES_DIR, f'{legend["name"]}.png'))
+    # prep_legend_images(data)
 
     post_legends(url + '/legends/', data)
 
 
 if __name__ == '__main__':
-    setup()
+    ...
+    seed()
