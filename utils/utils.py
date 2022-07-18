@@ -13,6 +13,10 @@ from selenium.common import WebDriverException
 from constants import *
 
 
+def print_dict_prettify(data):
+    print(json.dumps(data, indent=4))
+
+
 def cut_to_end_pattern(text, patterns, include_pattern=True):
     for pattern in patterns:
         n = len(pattern)
@@ -98,3 +102,29 @@ class BaseDataclass:
             data[field.name] = getattr(self, field.name)
 
         return data
+
+
+def get_attr_from_json_as_list(json_file, attr):
+    data = []
+
+    for obj in json_file:
+        data.append(obj[attr])
+
+    return data
+
+
+def get_attrs_from_json(json_file, attrs, attr_prefix=None):
+    data = {}
+
+    for obj in json_file:
+        for attr in attrs:
+            cur_data = get_attr_from_json_as_list(json_file, attr)
+
+            if attr_prefix:
+                key = f'{attr_prefix}_{attr}'
+            else:
+                key = f'{attr}'
+
+            data[key] = cur_data
+
+    return data
