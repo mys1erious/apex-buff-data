@@ -46,11 +46,7 @@ def weapon_dict(**kwargs):
 
     weapon = {}
     for field in fields:
-        try:
-            weapon[field] = kwargs[field]
-        except KeyError:
-            pass
-
+        weapon[field] = kwargs[field]
     return weapon
 
 
@@ -232,10 +228,6 @@ def parse_weapon_fields_data(fields):
     )
 
     return weapon
-
-    #     body_damage = tds[10].text.strip()
-    #     head_damage = tds[11].text.strip()
-    #     legs_damage = tds[12].text.strip()
 
 
 def scrape():
