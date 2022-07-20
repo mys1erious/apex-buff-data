@@ -33,7 +33,7 @@ WEAPON_IMAGES_DIR = os.path.join(WEAPONS_DIR, 'weapon_images')
 WEAPON_AMMO_IMAGES_DIR = os.path.join(WEAPONS_DIR, 'weapon_ammo_images')
 WEAPON_FIREMODE_IMAGES_DIR = os.path.join(WEAPONS_DIR, 'weapon_firemode_images')
 WEAPON_ATTACHMENT_IMAGES_DIR = os.path.join(WEAPONS_DIR, 'weapon_attachment_images')
-WEAPON_SPECIALS_IMAGES_DIR = os.path.join(WEAPONS_DIR, 'weapon_specials_images')
+WEAPON_MODIFICATOR_IMAGES_DIR = os.path.join(WEAPONS_DIR, 'weapon_modificator_images')
 
 
 # Creds (later move to .env)
