@@ -8,6 +8,29 @@ from constants import *
 from utils.utils import load_json_data, slugify, print_dict_prettify
 
 
+def post_dep_to_weapon(data: dict, url, json, dep_type=None):
+    if json:
+        response = requests.post(
+            url=url,
+            json=data,
+            auth=ADMIN_CREDS
+        )
+    else:
+        response = requests.post(
+                    url=url,
+                    data=data,
+                    auth=ADMIN_CREDS
+                )
+
+    print(f'POST_{dep_type if dep_type else ""}_TO_WEAPON: {response}')
+    return response
+
+
+def post_deps_to_weapon(data: dict, url, dep_type, json=False):
+    for item in data[dep_type]:
+        post_dep_to_weapon(item, url, dep_type=dep_type, json=json)
+
+
 def get_weapon_data_from_weapon(weapon):
     weapon_api_fields_map = {
         'weapon_name': 'name',
@@ -35,7 +58,6 @@ def get_weapon_data_from_weapon(weapon):
     return data
 
 
-# -- Attachments --
 def get_attachments_data_from_weapon(weapon):
     attachments = weapon['weapon_attachments']
     data = {'attachments': []}
@@ -46,23 +68,6 @@ def get_attachments_data_from_weapon(weapon):
     return data
 
 
-def post_attachment_to_weapon(attachment: dict, url):
-    response = requests.post(
-                url=url,
-                data=attachment,
-                auth=ADMIN_CREDS
-            )
-
-    print(f'POST_ATTACHMENT_TO_WEAPON `{list(attachment.items())[0][1]}`: {response}')
-    return response
-
-
-def post_attachments_to_weapon(data: dict, url):
-    for attachment in data['attachments']:
-        post_attachment_to_weapon(attachment, url)
-
-
-# -- Ammo --
 def get_ammo_data_from_weapon(weapon):
     ammo = weapon['weapon_ammo']
     data = {'ammo': []}
@@ -73,23 +78,6 @@ def get_ammo_data_from_weapon(weapon):
     return data
 
 
-def post_ammo_to_weapon(ammo: dict, url):
-    response = requests.post(
-                url=url,
-                data=ammo,
-                auth=ADMIN_CREDS
-            )
-
-    print(f'POST_AMMO_TO_WEAPON `{list(ammo.items())[0][1]}`: {response}')
-    return response
-
-
-def post_ammo_list_to_weapon(data: dict, url):
-    for ammo in data['ammo']:
-        post_ammo_to_weapon(ammo, url)
-
-
-# -- Mag --
 def get_mag_data_from_weapon(weapon):
     mags = weapon['mag_size']
 
@@ -106,19 +94,28 @@ def get_mag_data_from_weapon(weapon):
     return data
 
 
-def post_mag_to_weapon(mag, url):
-    response = requests.post(
-        url=url,
-        data=mag,
-        auth=ADMIN_CREDS
-    )
-    print(f'POST_MAG_TO_WEAPON `{list(mag.items())[0][1]}`: {response}')
-    return response
+def get_damage_data_from_weapon(weapon):
+    init_data = {
+        'body': weapon['body_damage'],
+        'head': weapon['head_damage'],
+        'legs': weapon['legs_damage']
+    }
+    data = {'damage': []}
 
+    # Later (maybe) scale for different types (normal/amped)
+    temp = {'modificator_slug': 'default'}
+    for key, val in init_data.items():
+        if key == 'body' or key == 'head' or key == 'legs':
+            if isinstance(val, dict):
+                temp2 = {}
+                for key2, val2 in val.items():
+                    temp2[key2] = val2
+                temp[key] = temp2
+            else:
+                temp[key] = {'min': val, 'max': val}
+    data['damage'].append(temp)
 
-def post_mags_to_weapon(data, url):
-    for mag in data['mags']:
-        post_mag_to_weapon(mag, url)
+    return data
 
 
 def post_weapon(weapon, url):
@@ -126,8 +123,9 @@ def post_weapon(weapon, url):
     attachments_data = get_attachments_data_from_weapon(weapon)
     ammo_data = get_ammo_data_from_weapon(weapon)
     mag_data = get_mag_data_from_weapon(weapon)
+    damage_data = get_damage_data_from_weapon(weapon)
 
-    # print(weapon_data)
+    # print(damage_data)
     # return
 
     weapon_name = weapon_data.get('name')
@@ -158,16 +156,16 @@ def post_weapon(weapon, url):
             auth=ADMIN_CREDS
         )
         print(f'PUT_PROJECTILE_SPEED `{weapon_name}`: {put_ps_response}')
-        #print(put_ps_response.json())
 
-        post_attachments_to_weapon(attachments_data, weapon_url+'attachments/')
-        post_ammo_list_to_weapon(ammo_data, weapon_url+'ammo/')
-        post_mags_to_weapon(mag_data, weapon_url+'mags/')
+        post_deps_to_weapon(attachments_data, weapon_url+'attachments/', 'attachments')
+        post_deps_to_weapon(ammo_data, weapon_url+'ammo/', 'ammo')
+        post_deps_to_weapon(mag_data, weapon_url+'mags/', 'mags')
+        post_deps_to_weapon(damage_data, weapon_url + 'damage/', 'damage', json=True)
 
 
 def post_weapons(weapons, url):
     for weapon in weapons:
-        weapon = weapons[1]
+        weapon = weapons[17]
         post_weapon(weapon, url)
         break
 
