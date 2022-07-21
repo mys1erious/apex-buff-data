@@ -58,11 +58,11 @@ def post_fire_mode(url, data):
             auth=(ADMIN_USERNAME, ADMIN_PASSWORD)
         )
         if not response.ok:
-            print(data['name'], response)
+            print(data['name'], response, response.json())
 
 
 def post_fire_modes(url, data):
-    for item in data['firemods']:
+    for item in data['fire_modes']:
         post_fire_mode(url, data=item)
 
 
@@ -120,14 +120,14 @@ def seed():
     # post_ammo_types(
     #     url+'/ammo/', load_json_data(WEAPONS_DIR+'/weapon_ammo.json')
     # )
-    # post_fire_modes(
-    #     url+'/fire_modes/',
-    #     load_json_data(WEAPONS_DIR + '/weapon_fire_modes.json')
-    # )
-    post_modificators(
-        url+'/modificators/',
-        dummy_modificators_data()
+    post_fire_modes(
+        url+'/fire_modes/',
+        load_json_data(WEAPONS_DIR + '/weapon_fire_modes.json')
     )
+    # post_modificators(
+    #     url+'/modificators/',
+    #     dummy_modificators_data()
+    # )
 
 
 if __name__ == '__main__':

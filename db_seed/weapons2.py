@@ -118,15 +118,78 @@ def get_damage_data_from_weapon(weapon):
     return data
 
 
+def get_fire_modes_data_from_weapon(weapon):
+    init_data = {'fire_modes': []}
+    fire_modes = weapon['weapon_fire_modes']
+    rpm = weapon['rpm']
+    dps = weapon['dps']
+    ttk = weapon['ttk']
+    # {
+    #     "fire_mode_slug": "single",
+    #     "modificator_slug": "default",
+    #     "rpm": {"min": 10, "max": 20},
+    #     "dps": {"min": 15, "max": 40},
+    #     "ttk": {"min": 10, "max": 10}
+    # }
+
+    # Want to puke watching this implementation..., refactor later
+    #   right now needed just for API testing
+    for i, fire_mode in enumerate(fire_modes):
+        if isinstance(rpm, list):
+            try:
+                cur_rpm = rpm[i]
+                cur_dps = dps[i]
+                cur_ttk = ttk[i]
+                temp_rpm = {}
+                temp_dps = {}
+                temp_ttk = {}
+                if isinstance(cur_rpm, dict):
+                    temp_rpm = cur_rpm
+                    temp_dps = cur_dps
+                    temp_ttk = cur_ttk
+                else:
+                    temp_rpm['min'] = cur_rpm
+                    temp_rpm['max'] = cur_rpm
+                    temp_dps['min'] = cur_dps
+                    temp_dps['max'] = cur_dps
+                    temp_ttk['min'] = cur_ttk
+                    temp_ttk['max'] = cur_ttk
+            except KeyError:
+                temp_rpm = None,
+                temp_dps = None,
+                temp_ttk = None
+
+            init_data['fire_modes'].append(
+                {
+                    'fire_mode_slug': slugify(fire_mode),
+                    'modificator_slug': 'default',
+                    'rpm': temp_rpm,
+                    'dps': temp_dps,
+                    'ttk': temp_ttk
+                }
+            )
+        else:
+            init_data['fire_modes'].append(
+                {
+                    'fire_mode_slug': slugify(fire_mode),
+                    'modificator_slug': 'default',
+                    'rpm': rpm,
+                    'dps': dps,
+                    'ttk': ttk
+                }
+            )
+
+    # print(json.dumps(init_data, indent=4))
+    return init_data
+
+
 def post_weapon(weapon, url):
     weapon_data = get_weapon_data_from_weapon(weapon)
     attachments_data = get_attachments_data_from_weapon(weapon)
     ammo_data = get_ammo_data_from_weapon(weapon)
     mag_data = get_mag_data_from_weapon(weapon)
     damage_data = get_damage_data_from_weapon(weapon)
-
-    # print(damage_data)
-    # return
+    fire_modes_data = get_fire_modes_data_from_weapon(weapon)
 
     weapon_name = weapon_data.get('name')
     weapon_img_path = weapon_data.pop('weapon_img_path')
@@ -162,12 +225,14 @@ def post_weapon(weapon, url):
         post_deps_to_weapon(mag_data, weapon_url+'mags/', 'mags')
         post_deps_to_weapon(damage_data, weapon_url + 'damage/', 'damage', json=True)
 
+        post_deps_to_weapon(fire_modes_data, weapon_url + 'fire_modes/', 'fire_modes', json=True)
+
 
 def post_weapons(weapons, url):
     for weapon in weapons:
-        weapon = weapons[17]
+        # weapon = weapons[9]
         post_weapon(weapon, url)
-        break
+        # break
 
 
 def seed():
