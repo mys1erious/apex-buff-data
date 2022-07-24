@@ -1,9 +1,8 @@
+import re
 import time
 from dataclasses import (
     dataclass,
-    fields,
-    is_dataclass,
-    asdict
+    fields
 )
 import json
 import cv2
@@ -12,6 +11,44 @@ from selenium import webdriver
 from selenium.common import WebDriverException
 
 from constants import *
+
+
+def print_dict_prettify(data):
+    print(json.dumps(data, indent=4))
+
+
+def cut_to_end_pattern(text, patterns, include_pattern=True):
+    for pattern in patterns:
+        n = len(pattern)
+        ind = text.find(pattern)
+
+        if include_pattern:
+            ind += n
+
+        if ind > n:
+            return text[:ind]
+
+    return ''
+
+
+def slugify(s):
+    s = s.lower().strip()
+    s = re.sub(r'[^\w\s-]', '', s)
+    s = re.sub(r'[\s_-]+', '-', s)
+    s = re.sub(r'^-+|-+$', '', s)
+    return s
+
+
+def save_to_json(path, data):
+    with open(path, 'w') as outfile:
+        json.dump(data, outfile, indent=2)
+
+
+def load_json_data(file):
+    with open(file, 'r') as f:
+        data = json.load(f)
+
+        return data
 
 
 def wait(fn):
@@ -67,15 +104,27 @@ class BaseDataclass:
         return data
 
 
-def merge_legend_img_bg(path):
-    img = cv2.imread(path)
+def get_attr_from_json_as_list(json_file, attr):
+    data = []
 
-    h, w = img.shape[:2]
+    for obj in json_file:
+        data.append(obj[attr])
 
-    white_bg = [225, 225, 225]
-    img[0:91, 0:w] = white_bg
-    img[0:h, 0:630] = white_bg
-    img[0:h, w-630:w] = white_bg
-    img[h-91:h, 0:w] = white_bg
+    return data
 
-    cv2.imwrite(path, img)
+
+def get_attrs_from_json(json_file, attrs, attr_prefix=None):
+    data = {}
+
+    for obj in json_file:
+        for attr in attrs:
+            cur_data = get_attr_from_json_as_list(json_file, attr)
+
+            if attr_prefix:
+                key = f'{attr_prefix}_{attr}'
+            else:
+                key = f'{attr}'
+
+            data[key] = cur_data
+
+    return data

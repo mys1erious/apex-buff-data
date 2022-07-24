@@ -1,12 +1,13 @@
-{
-  "HAVOC Rifle": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3f/HAVOC_Rifle_Icon.svg/revision/latest/scale-to-width-down/105?cb=20210806055242",
+[
+  {
+    "weapon_name": "HAVOC Rifle",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3f/HAVOC_Rifle_Icon.svg",
     "weapon_type": "Assault rifle",
     "weapon_ammo": [
       "Energy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220605035002"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg"
     ],
     "weapon_attachments": [
       "Extended Energy Mag",
@@ -15,43 +16,43 @@
       "Turbocharger"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Extended_Energy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716062432",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2b/Turbocharger.svg/revision/latest/scale-to-width-down/20?cb=20210430180204"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Extended_Energy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2b/Turbocharger.svg"
     ],
-    "mag_size": [
-      "24"
-    ],
+    "mag_size": {
+      "normal": 24
+    },
     "rpm": [
-      "672"
+      672.0
     ],
     "dps": [
-      "202"
+      202.0
     ],
     "ttk": [
-      "0.98"
+      0.98
     ],
-    "projectile_speed": "30500",
-    "fire_modes": [
+    "projectile_speed": 30500,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "18",
-    "head_damage": "32",
-    "legs_damage": "14"
+    "body_damage": 18,
+    "head_damage": 32,
+    "legs_damage": 14
   },
-  "VK-47 Flatline": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/93/VK-47_Flatline_Icon.svg/revision/latest/scale-to-width-down/87?cb=20210806054841",
+  {
+    "weapon_name": "VK-47 Flatline",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/93/VK-47_Flatline_Icon.svg",
     "weapon_type": "Assault rifle",
     "weapon_ammo": [
       "Heavy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031538"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg"
     ],
     "weapon_attachments": [
       "Extended Heavy Mag",
@@ -59,43 +60,47 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061905",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "20"
-    ],
+    "mag_size": {
+      "normal": 20
+    },
     "rpm": [
-      "600"
+      600.0,
+      600.0
     ],
     "dps": [
-      "180"
+      180.0,
+      180.0
     ],
     "ttk": [
-      "1.1"
+      1.1,
+      1.1
     ],
-    "projectile_speed": "24000",
-    "fire_modes": [
+    "projectile_speed": 24000,
+    "weapon_fire_modes": [
       "Auto",
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "18",
-    "head_damage": "32",
-    "legs_damage": "14"
+    "body_damage": 18,
+    "head_damage": 32,
+    "legs_damage": 14
   },
-  "Hemlok Burst AR": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Hemlok_Burst_AR_Icon.svg/revision/latest/scale-to-width-down/82?cb=20210806055215",
+  {
+    "weapon_name": "Hemlok Burst AR",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Hemlok_Burst_AR_Icon.svg",
     "weapon_type": "Assault rifle",
     "weapon_ammo": [
       "Heavy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031538"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -105,49 +110,49 @@
       "Boosted Loader"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061905",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/37/Boosted_Loader.svg/revision/latest/scale-to-width-down/20?cb=20220527145923"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/37/Boosted_Loader.svg"
     ],
-    "mag_size": [
-      "18"
-    ],
+    "mag_size": {
+      "normal": 18
+    },
     "rpm": [
-      "414",
-      "384"
+      414.0,
+      384.0
     ],
     "dps": [
-      "138",
-      "128"
+      138.0,
+      128.0
     ],
     "ttk": [
-      "1.3",
-      "1.41"
+      1.3,
+      1.41
     ],
-    "projectile_speed": "27500",
-    "fire_modes": [
-      "3-round",
-      "burst",
+    "projectile_speed": 27500,
+    "weapon_fire_modes": [
+      "3-round burst",
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063404",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "20",
-    "head_damage": "35",
-    "legs_damage": "15"
+    "body_damage": 20,
+    "head_damage": 35,
+    "legs_damage": 15
   },
-  "R-301 Carbine": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1e/R-301_Carbine_Icon.svg/revision/latest/scale-to-width-down/99?cb=20210806055041",
+  {
+    "weapon_name": "R-301 Carbine",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1e/R-301_Carbine_Icon.svg",
     "weapon_type": "Assault rifle",
     "weapon_ammo": [
       "Light"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031711"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -156,45 +161,48 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061856",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "18"
-    ],
+    "mag_size": {
+      "normal": 18
+    },
     "rpm": [
-      "810"
+      810.0,
+      810.0
     ],
     "dps": [
-      "189"
+      189.0,
+      189.0
     ],
     "ttk": [
-      "1.04"
+      1.04,
+      1.04
     ],
-    "projectile_speed": "29000",
-    "fire_modes": [
+    "projectile_speed": 29000,
+    "weapon_fire_modes": [
       "Auto",
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "14",
-    "head_damage": "25",
-    "legs_damage": "11"
+    "body_damage": 14,
+    "head_damage": 25,
+    "legs_damage": 11
   },
-  "Alternator SMG": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/86/Alternator_SMG_Icon.svg/revision/latest/scale-to-width-down/46?cb=20210807022757",
+  {
+    "weapon_name": "Alternator SMG",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/86/Alternator_SMG_Icon.svg",
     "weapon_type": "SMG",
     "weapon_ammo": [
       "Light"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031711"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -203,43 +211,43 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061856",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "19"
-    ],
+    "mag_size": {
+      "normal": 19
+    },
     "rpm": [
-      "600"
+      600.0
     ],
     "dps": [
-      "160"
+      160.0
     ],
     "ttk": [
-      "1.2"
+      1.2
     ],
-    "projectile_speed": "19500",
-    "fire_modes": [
+    "projectile_speed": 19500,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "16",
-    "head_damage": "24",
-    "legs_damage": "13"
+    "body_damage": 16,
+    "head_damage": 24,
+    "legs_damage": 13
   },
-  "Prowler Burst PDW": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/13/Prowler_Burst_PDW_Icon.svg/revision/latest/scale-to-width-down/62?cb=20210806055051",
+  {
+    "weapon_name": "Prowler Burst PDW",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/13/Prowler_Burst_PDW_Icon.svg",
     "weapon_type": "SMG",
     "weapon_ammo": [
       "Heavy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031538"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg"
     ],
     "weapon_attachments": [
       "Extended Heavy Mag",
@@ -247,42 +255,42 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061905",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "20"
-    ],
+    "mag_size": {
+      "normal": 20
+    },
     "rpm": [
-      "666"
+      666.0
     ],
     "dps": [
-      "155"
+      155.0
     ],
     "ttk": [
-      "1.07"
+      1.07
     ],
-    "projectile_speed": "18000",
-    "fire_modes": [
-      "5-round",
-      "burst"
+    "projectile_speed": 18000,
+    "weapon_fire_modes": [
+      "5-round burst"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063404"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg"
     ],
-    "body_damage": "14",
-    "head_damage": "21",
-    "legs_damage": "11"
+    "body_damage": 14,
+    "head_damage": 21,
+    "legs_damage": 11
   },
-  "R-99 SMG": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/R-99_SMG_Icon.svg/revision/latest/scale-to-width-down/78?cb=20210806055031",
+  {
+    "weapon_name": "R-99 SMG",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/R-99_SMG_Icon.svg",
     "weapon_type": "SMG",
     "weapon_ammo": [
       "Light"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031711"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -291,83 +299,84 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061856",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "20"
-    ],
+    "mag_size": {
+      "normal": 20
+    },
     "rpm": [
-      "1080"
+      1080.0
     ],
     "dps": [
-      "198"
+      198.0
     ],
     "ttk": [
-      "1"
+      1.0
     ],
-    "projectile_speed": "21000",
-    "fire_modes": [
+    "projectile_speed": 21000,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "11",
-    "head_damage": "17",
-    "legs_damage": "9"
+    "body_damage": 11,
+    "head_damage": 17,
+    "legs_damage": 9
   },
-  "Volt SMG": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/dd/Volt_SMG_Icon.svg/revision/latest/scale-to-width-down/95?cb=20210806054822",
+  {
+    "weapon_name": "Volt SMG",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/dd/Volt_SMG_Icon.svg",
     "weapon_type": "SMG",
     "weapon_ammo": [
       "Energy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a3/Mythic_Energy_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220609110213"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a3/Mythic_Energy_Ammo.svg"
     ],
     "weapon_attachments": [
       "SMG optics"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg"
     ],
-    "mag_size": [
-      "28"
-    ],
+    "mag_size": {
+      "normal": 28
+    },
     "rpm": [
-      "720"
+      720.0
     ],
     "dps": [
-      "204"
+      204.0
     ],
     "ttk": [
-      "0.92"
+      0.92
     ],
-    "projectile_speed": "23500",
-    "fire_modes": [
+    "projectile_speed": 23500,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "17",
-    "head_damage": "26",
-    "legs_damage": "14"
+    "body_damage": 17,
+    "head_damage": 26,
+    "legs_damage": 14
   },
-  "C.A.R. SMG": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/C.A.R._SMG_Icon.svg/revision/latest/scale-to-width-down/94?cb=20211108090057",
+  {
+    "weapon_name": "C.A.R. SMG",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/C.A.R._SMG_Icon.svg",
     "weapon_type": "SMG",
     "weapon_ammo": [
       "Heavy",
       "Light"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031538",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031711"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -380,48 +389,47 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061905",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061856",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "20"
-    ],
+    "mag_size": {
+      "normal": 20
+    },
     "rpm": [
-      "930"
+      930.0
     ],
     "dps": [
-      "202"
+      202.0
     ],
     "ttk": [
-      "0.97"
+      0.97
     ],
-    "projectile_speed": "18500",
-    "fire_modes": [
+    "projectile_speed": 18500,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "13",
-    "head_damage": "20",
-    "legs_damage": "10"
+    "body_damage": 13,
+    "head_damage": 20,
+    "legs_damage": 10
   },
-  "Devotion LMG": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/cb/Devotion_LMG_Icon.svg/revision/latest/scale-to-width-down/113?cb=20210806055313",
+  {
+    "weapon_name": "Devotion LMG",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/cb/Devotion_LMG_Icon.svg",
     "weapon_type": "LMG",
     "weapon_ammo": [
       "Energy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220605035002"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -431,44 +439,47 @@
       "Turbocharger"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Extended_Energy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716062432",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2b/Turbocharger.svg/revision/latest/scale-to-width-down/20?cb=20210430180204"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Extended_Energy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2b/Turbocharger.svg"
     ],
-    "mag_size": [
-      "36",
-      "41"
-    ],
-    "rpm": [
-      "300~900"
-    ],
-    "dps": [
-      "75-225"
-    ],
+    "mag_size": {
+      "normal": 36,
+      "modded_loader": 41
+    },
+    "rpm": {
+      "min": "300",
+      "max": "900"
+    },
+    "dps": {
+      "min": "75",
+      "max": "225"
+    },
     "ttk": [
-      "1.33"
+      1.33
     ],
-    "projectile_speed": "33500",
-    "fire_modes": [
+    "projectile_speed": 33500,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "15",
-    "head_damage": "23",
-    "legs_damage": "13"
+    "body_damage": 15,
+    "head_damage": 23,
+    "legs_damage": 13
   },
-  "L-STAR EMG": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/39/L-STAR_EMG_Icon.svg/revision/latest/scale-to-width-down/82?cb=20210806055205",
+  {
+    "weapon_name": "L-STAR EMG",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/39/L-STAR_EMG_Icon.svg",
     "weapon_type": "LMG",
     "weapon_ammo": [
       "Energy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220605035002"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -477,43 +488,43 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Extended_Energy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716062432",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Extended_Energy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "\u221e"
-    ],
+    "mag_size": {
+      "normal": -1
+    },
     "rpm": [
-      "600"
+      600.0
     ],
     "dps": [
-      "170"
+      170.0
     ],
     "ttk": [
-      "1.1"
+      1.1
     ],
-    "projectile_speed": "22000",
-    "fire_modes": [
+    "projectile_speed": 22000,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "17",
-    "head_damage": "26",
-    "legs_damage": "14"
+    "body_damage": 17,
+    "head_damage": 26,
+    "legs_damage": 14
   },
-  "M600 Spitfire": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/f4/M600_Spitfire_Icon.svg/revision/latest/scale-to-width-down/105?cb=20210806055156",
+  {
+    "weapon_name": "M600 Spitfire",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/f4/M600_Spitfire_Icon.svg",
     "weapon_type": "LMG",
     "weapon_ammo": [
       "Heavy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031538"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg"
     ],
     "weapon_attachments": [
       "Extended Heavy Mag",
@@ -521,42 +532,43 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061905",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "35",
-      "40"
-    ],
+    "mag_size": {
+      "normal": 35,
+      "modded_loader": 40
+    },
     "rpm": [
-      "540"
+      540.0
     ],
     "dps": [
-      "162"
+      162.0
     ],
     "ttk": [
-      "1.22"
+      1.22
     ],
-    "projectile_speed": "27500",
-    "fire_modes": [
+    "projectile_speed": 27500,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "18",
-    "head_damage": "27",
-    "legs_damage": "15"
+    "body_damage": 18,
+    "head_damage": 27,
+    "legs_damage": 15
   },
-  "Rampage LMG": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Rampage_LMG_Icon.svg/revision/latest/scale-to-width-down/131?cb=20210806054944",
+  {
+    "weapon_name": "Rampage LMG",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Rampage_LMG_Icon.svg",
     "weapon_type": "LMG",
     "weapon_ammo": [
       "Heavy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031538"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -565,91 +577,91 @@
       "Standard Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061905",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717045737",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Standard_Stock.svg"
     ],
-    "mag_size": [
-      "28",
-      "32"
-    ],
-    "rpm": [
-      "300",
-      "390"
-    ],
-    "dps": [
-      "130",
-      "169"
-    ],
-    "ttk": [
-      "1.4",
-      "1.08"
-    ],
-    "projectile_speed": "26500",
-    "fire_modes": [
+    "mag_size": {
+      "normal": 28,
+      "modded_loader": 32
+    },
+    "rpm": {
+      "normal": 300.0,
+      "heavy_rounds_revved_up": 390.0
+    },
+    "dps": {
+      "normal": 130.0,
+      "heavy_rounds_revved_up": 169.0
+    },
+    "ttk": {
+      "normal": 1.4,
+      "heavy_rounds_revved_up": 1.08
+    },
+    "projectile_speed": 26500,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "26",
-    "head_damage": "39",
-    "legs_damage": "22"
+    "body_damage": 26,
+    "head_damage": 39,
+    "legs_damage": 22
   },
-  "G7 Scout": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/57/G7_Scout_Icon.svg/revision/latest/scale-to-width-down/122?cb=20210806055253",
+  {
+    "weapon_name": "G7 Scout",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/57/G7_Scout_Icon.svg",
     "weapon_type": "Marksmanweapon",
     "weapon_ammo": [
       "Light"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d1/Mythic_Light_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220609091503"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d1/Mythic_Light_Rounds.svg"
     ],
     "weapon_attachments": [
       "Marksman optics"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg"
     ],
-    "mag_size": [
-      "20"
-    ],
-    "rpm": [
-      "240",
-      "253"
-    ],
-    "dps": [
-      "144",
-      "152"
-    ],
-    "ttk": [
-      "1.25",
-      "1.19"
-    ],
-    "projectile_speed": "30000",
-    "fire_modes": [
+    "mag_size": {
+      "normal": 20
+    },
+    "rpm": {
+      "normal": 240.0,
+      "double_tap_trigger": 253.0
+    },
+    "dps": {
+      "normal": 144.0,
+      "double_tap_trigger": 152.0
+    },
+    "ttk": {
+      "normal": 1.25,
+      "double_tap_trigger": 1.19
+    },
+    "projectile_speed": 30000,
+    "weapon_fire_modes": [
       "Single",
-      "2-round",
-      "burst"
+      "2-round burst"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063404"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/ae/Burst_Icon.svg"
     ],
-    "body_damage": "36",
-    "head_damage": "72",
-    "legs_damage": "26"
+    "body_damage": 36,
+    "head_damage": 72,
+    "legs_damage": 26
   },
-  "Triple Take": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/6/6a/Triple_Take_Icon.svg/revision/latest/scale-to-width-down/110?cb=20210806054852",
+  {
+    "weapon_name": "Triple Take",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/6/6a/Triple_Take_Icon.svg",
     "weapon_type": "Marksmanweapon",
     "weapon_ammo": [
       "Energy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220605035002"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg"
     ],
     "weapon_attachments": [
       "Extended Energy Mag",
@@ -658,43 +670,43 @@
       "Kinetic Feeder"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Extended_Energy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716062432",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717050010",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1a/Kinetic_Feeder.svg/revision/latest/scale-to-width-down/20?cb=20220527141945"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/21/Extended_Energy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1a/Kinetic_Feeder.svg"
     ],
-    "mag_size": [
-      "18"
-    ],
+    "mag_size": {
+      "normal": 18
+    },
     "rpm": [
-      "72"
+      72.0
     ],
     "dps": [
-      "76"
+      76.0
     ],
     "ttk": [
-      "2.5"
+      2.5
     ],
-    "projectile_speed": "32000",
-    "fire_modes": [
+    "projectile_speed": 32000,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "6321\u00d73",
-    "head_damage": "11137\u00d73",
-    "legs_damage": "5719\u00d73"
+    "body_damage": 63,
+    "head_damage": 111,
+    "legs_damage": 57
   },
-  "30-30 Repeater": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/8c/30-30_Repeater_Icon.svg/revision/latest/scale-to-width-down/140?cb=20210806055346",
+  {
+    "weapon_name": "30-30 Repeater",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/8c/30-30_Repeater_Icon.svg",
     "weapon_type": "Marksmanweapon",
     "weapon_ammo": [
       "Heavy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031538"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg"
     ],
     "weapon_attachments": [
       "Extended Heavy Mag",
@@ -703,43 +715,52 @@
       "Shatter Caps"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061905",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717050010",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Shatter_Caps.svg/revision/latest/scale-to-width-down/20?cb=20210430170240"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Shatter_Caps.svg"
     ],
-    "mag_size": [
-      "6"
-    ],
+    "mag_size": {
+      "normal": 6
+    },
     "rpm": [
-      "139"
+      139.0
     ],
     "dps": [
-      "97"
+      97.0
     ],
     "ttk": [
-      "1.73"
+      1.73
     ],
-    "projectile_speed": "29000",
-    "fire_modes": [
+    "projectile_speed": 29000,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "42-57",
-    "head_damage": "74-100",
-    "legs_damage": "36-48"
+    "body_damage": {
+      "min": "42",
+      "max": "57"
+    },
+    "head_damage": {
+      "min": "74",
+      "max": "100"
+    },
+    "legs_damage": {
+      "min": "36",
+      "max": "48"
+    }
   },
-  "Bocek Compound Bow": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/07/Bocek_Compound_Bow_Icon.svg/revision/latest/scale-to-width-down/113?cb=20210806055334",
+  {
+    "weapon_name": "Bocek Compound Bow",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/07/Bocek_Compound_Bow_Icon.svg",
     "weapon_type": "Marksmanweapon",
     "weapon_ammo": [
       "Arrows"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/fe/Arrows.svg/revision/latest/scale-to-width-down/22?cb=20220605031500"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/fe/Arrows.svg"
     ],
     "weapon_attachments": [
       "Marksman optics except 2x-4x Variable AOG",
@@ -747,86 +768,98 @@
       "Deadeye's Tempo"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Shatter_Caps.svg/revision/latest/scale-to-width-down/20?cb=20210430170240",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/4d/Deadeye%27s_Tempo.svg/revision/latest/scale-to-width-down/20?cb=20220527145846"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c2/Shatter_Caps.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/4d/Deadeye%27s_Tempo.svg"
     ],
-    "mag_size": [
-      "\u221e"
-    ],
-    "rpm": [
-      "180~107"
-    ],
-    "dps": [
-      "75-107"
-    ],
-    "ttk": [
-      "2.33~1.68"
-    ],
-    "projectile_speed": "10000-28000",
-    "fire_modes": [
+    "mag_size": {
+      "normal": -1
+    },
+    "rpm": {
+      "min": "180",
+      "max": "107"
+    },
+    "dps": {
+      "min": "75",
+      "max": "107"
+    },
+    "ttk": {
+      "min": "2.33",
+      "max": "1.68"
+    },
+    "projectile_speed": {
+      "min": "10000",
+      "max": "28000"
+    },
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "25-60",
-    "head_damage": "31-105",
-    "legs_damage": "20-54"
+    "body_damage": {
+      "min": "25",
+      "max": "60"
+    },
+    "head_damage": {
+      "min": "31",
+      "max": "105"
+    },
+    "legs_damage": {
+      "min": "20",
+      "max": "54"
+    }
   },
-  "Charge Rifle": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1e/Charge_Rifle_Icon.svg/revision/latest/scale-to-width-down/77?cb=20210806055324",
+  {
+    "weapon_name": "Charge Rifle",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1e/Charge_Rifle_Icon.svg",
     "weapon_type": "Sniper rifle",
     "weapon_ammo": [
       "Sniper"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3e/Sniper_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220605062130"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3e/Sniper_Ammo.svg"
     ],
     "weapon_attachments": [
       "Sniper optics",
       "Sniper Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717050010",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg"
     ],
-    "mag_size": [
-      "8"
-    ],
+    "mag_size": {
+      "normal": 8
+    },
     "rpm": [
-      "26"
+      26.0
     ],
     "dps": [
-      "39"
+      39.0
     ],
     "ttk": [
-      "4.62"
+      4.62
     ],
-    "projectile_speed": "Hitscan",
-    "fire_modes": [
+    "projectile_speed": 0,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "903\u00d715+45",
-    "head_damage": "1164\u00d715+56",
-    "legs_damage": "903\u00d715+45"
+    "body_damage": 90,
+    "head_damage": 116,
+    "legs_damage": 90
   },
-  "Longbow DMR": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/4a/Longbow_DMR_Icon.svg/revision/latest/scale-to-width-down/140?cb=20210806055145",
+  {
+    "weapon_name": "Longbow DMR",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/4a/Longbow_DMR_Icon.svg",
     "weapon_type": "Sniper rifle",
     "weapon_ammo": [
       "Sniper"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3e/Sniper_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220605062130"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3e/Sniper_Ammo.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -835,77 +868,78 @@
       "Sniper Stock"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/6/60/Extended_Sniper_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210828213119",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717050010",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/6/60/Extended_Sniper_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg"
     ],
-    "mag_size": [
-      "6"
-    ],
+    "mag_size": {
+      "normal": 6
+    },
     "rpm": [
-      "78"
+      78.0
     ],
     "dps": [
-      "72"
+      72.0
     ],
     "ttk": [
-      "2.31"
+      2.31
     ],
-    "projectile_speed": "30500",
-    "fire_modes": [
+    "projectile_speed": 30500,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "55",
-    "head_damage": "128",
-    "legs_damage": "48"
+    "body_damage": 55,
+    "head_damage": 128,
+    "legs_damage": 48
   },
-  "Kraber .50-Cal Sniper": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/45/Kraber_.50-Cal_Sniper_Icon.svg/revision/latest/scale-to-width-down/140?cb=20210806055231",
+  {
+    "weapon_name": "Kraber .50-Cal Sniper",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/45/Kraber_.50-Cal_Sniper_Icon.svg",
     "weapon_type": "Sniper rifle",
     "weapon_ammo": [
       "Sniper"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/32/Mythic_Sniper_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220606175720"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/32/Mythic_Sniper_Ammo.svg"
     ],
     "weapon_attachments": [],
     "weapon_attachments_img": [],
-    "mag_size": [
-      "4"
-    ],
+    "mag_size": {
+      "normal": 4
+    },
     "rpm": [
-      "25"
+      25.0
     ],
     "dps": [
-      "58"
+      58.0
     ],
     "ttk": [
-      "2.4"
+      2.4
     ],
-    "projectile_speed": "29500",
-    "fire_modes": [
+    "projectile_speed": 29500,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "140",
-    "head_damage": "280",
-    "legs_damage": "112"
+    "body_damage": 140,
+    "head_damage": 280,
+    "legs_damage": 112
   },
-  "Sentinel": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/7/7a/Sentinel_Icon.svg/revision/latest/scale-to-width-down/140?cb=20210806055009",
+  {
+    "weapon_name": "Sentinel",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/7/7a/Sentinel_Icon.svg",
     "weapon_type": "Sniper rifle",
     "weapon_ammo": [
       "Sniper"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3e/Sniper_Ammo.svg/revision/latest/scale-to-width-down/22?cb=20220605062130"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3e/Sniper_Ammo.svg"
     ],
     "weapon_attachments": [
       "Extended Sniper Mag",
@@ -914,123 +948,133 @@
       "Deadeye's Tempo"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/6/60/Extended_Sniper_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210828213119",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg/revision/latest/scale-to-width-down/20?cb=20210717050010",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/4d/Deadeye%27s_Tempo.svg/revision/latest/scale-to-width-down/20?cb=20220527145846"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/6/60/Extended_Sniper_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/09/Sniper_Stock.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/4d/Deadeye%27s_Tempo.svg"
     ],
-    "mag_size": [
-      "4"
-    ],
+    "mag_size": {
+      "normal": 4
+    },
     "rpm": [
-      "31"
+      31.0
     ],
-    "dps": [
-      "36",
-      "46"
-    ],
+    "dps": {
+      "normal": 36.0,
+      "amped": 46.0
+    },
     "ttk": [
-      "3.87"
+      3.87
     ],
-    "projectile_speed": "31000",
-    "fire_modes": [
+    "projectile_speed": 31000,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "70\n 88",
-    "head_damage": "140\n 176",
-    "legs_damage": "63\n 79"
+    "body_damage": {
+      "normal": 70.0,
+      "amped": 88.0
+    },
+    "head_damage": {
+      "normal": 140.0,
+      "amped": 176.0
+    },
+    "legs_damage": {
+      "normal": 63.0,
+      "amped": 79.0
+    }
   },
-  "EVA-8 Auto": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/7/7b/EVA-8_Auto_Icon.svg/revision/latest/scale-to-width-down/92?cb=20210806055302",
+  {
+    "weapon_name": "EVA-8 Auto",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/7/7b/EVA-8_Auto_Icon.svg",
     "weapon_type": "Shotgun",
     "weapon_ammo": [
       "Shotgun"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/42/Shotgun_Shells.svg/revision/latest/scale-to-width-down/22?cb=20220605040015"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/42/Shotgun_Shells.svg"
     ],
     "weapon_attachments": [
       "Shotgun Bolt",
       "Shotgun optics"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/ba/Shotgun_Bolt.svg/revision/latest/scale-to-width-down/20?cb=20210717050347",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/ba/Shotgun_Bolt.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg"
     ],
-    "mag_size": [
-      "8"
-    ],
+    "mag_size": {
+      "normal": 8
+    },
     "rpm": [
-      "120"
+      120.0
     ],
     "dps": [
-      "108"
+      108.0
     ],
     "ttk": [
-      "1.43"
+      1.43
     ],
-    "projectile_speed": "16000",
-    "fire_modes": [
+    "projectile_speed": 16000,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "546\u00d79",
-    "head_damage": "728\u00d79",
-    "legs_damage": "546\u00d79"
+    "body_damage": 54,
+    "head_damage": 72,
+    "legs_damage": 54
   },
-  "Mastiff Shotgun": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/df/Mastiff_Shotgun_Icon.svg/revision/latest/scale-to-width-down/119?cb=20210806055135",
+  {
+    "weapon_name": "Mastiff Shotgun",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/df/Mastiff_Shotgun_Icon.svg",
     "weapon_type": "Shotgun",
     "weapon_ammo": [
       "Shotgun"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1c/Mythic_Shotgun_Shells.svg/revision/latest/scale-to-width-down/22?cb=20220607045850"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1c/Mythic_Shotgun_Shells.svg"
     ],
     "weapon_attachments": [
       "Shotgun optics"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg"
     ],
-    "mag_size": [
-      "4"
-    ],
+    "mag_size": {
+      "normal": 4
+    },
     "rpm": [
-      "72"
+      72.0
     ],
     "dps": [
-      "134"
+      134.0
     ],
     "ttk": [
-      "0.83"
+      0.83
     ],
-    "projectile_speed": "12000",
-    "fire_modes": [
+    "projectile_speed": 12000,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "11214\u00d78",
-    "head_damage": "14418\u00d78",
-    "legs_damage": "11214\u00d78"
+    "body_damage": 112,
+    "head_damage": 144,
+    "legs_damage": 112
   },
-  "Mozambique Shotgun": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c8/Mozambique_Shotgun_Icon.svg/revision/latest/scale-to-width-down/67?cb=20210806055126",
+  {
+    "weapon_name": "Mozambique Shotgun",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c8/Mozambique_Shotgun_Icon.svg",
     "weapon_type": "Shotgun",
     "weapon_ammo": [
       "Shotgun"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/42/Shotgun_Shells.svg/revision/latest/scale-to-width-down/22?cb=20220605040015"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/42/Shotgun_Shells.svg"
     ],
     "weapon_attachments": [
       "Shotgun Bolt",
@@ -1038,41 +1082,42 @@
       "Hammerpoint Rounds"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/ba/Shotgun_Bolt.svg/revision/latest/scale-to-width-down/20?cb=20210717050347",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d4/Hammerpoint_Rounds.svg/revision/latest/scale-to-width-down/20?cb=20220527142438"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/ba/Shotgun_Bolt.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d4/Hammerpoint_Rounds.svg"
     ],
-    "mag_size": [
-      "6"
-    ],
+    "mag_size": {
+      "normal": 6
+    },
     "rpm": [
-      "132"
+      132.0
     ],
     "dps": [
-      "99"
+      99.0
     ],
     "ttk": [
-      "1.82"
+      1.82
     ],
-    "projectile_speed": "10000",
-    "fire_modes": [
+    "projectile_speed": 10000,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "4515\u00d73",
-    "head_damage": "5719\u00d73",
-    "legs_damage": "4515\u00d73"
+    "body_damage": 45,
+    "head_damage": 57,
+    "legs_damage": 45
   },
-  "Peacekeeper": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/0d/Peacekeeper_Icon.svg/revision/latest/scale-to-width-down/128?cb=20210806055102",
+  {
+    "weapon_name": "Peacekeeper",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/0/0d/Peacekeeper_Icon.svg",
     "weapon_type": "Shotgun",
     "weapon_ammo": [
       "Shotgun"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/42/Shotgun_Shells.svg/revision/latest/scale-to-width-down/22?cb=20220605040015"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/42/Shotgun_Shells.svg"
     ],
     "weapon_attachments": [
       "Shotgun Bolt",
@@ -1080,41 +1125,42 @@
       "Kinetic Feeder"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/ba/Shotgun_Bolt.svg/revision/latest/scale-to-width-down/20?cb=20210717050347",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1a/Kinetic_Feeder.svg/revision/latest/scale-to-width-down/20?cb=20220527141945"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/b/ba/Shotgun_Bolt.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/1/1a/Kinetic_Feeder.svg"
     ],
-    "mag_size": [
-      "5"
-    ],
+    "mag_size": {
+      "normal": 5
+    },
     "rpm": [
-      "55"
+      55.0
     ],
     "dps": [
-      "90"
+      90.0
     ],
     "ttk": [
-      "2.18"
+      2.18
     ],
-    "projectile_speed": "16000",
-    "fire_modes": [
+    "projectile_speed": 16000,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "999\u00d711",
-    "head_damage": "12111\u00d711",
-    "legs_damage": "999\u00d711"
+    "body_damage": 99,
+    "head_damage": 121,
+    "legs_damage": 99
   },
-  "RE-45 Auto": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/34/RE-45_Auto_Icon.svg/revision/latest/scale-to-width-down/41?cb=20210806055020",
+  {
+    "weapon_name": "RE-45 Auto",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/34/RE-45_Auto_Icon.svg",
     "weapon_type": "Pistol",
     "weapon_ammo": [
       "Light"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031711"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg"
     ],
     "weapon_attachments": [
       "Barrel Stabilizer",
@@ -1123,43 +1169,43 @@
       "Hammerpoint Rounds"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg/revision/latest/scale-to-width-down/20?cb=20220526020134",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061856",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d4/Hammerpoint_Rounds.svg/revision/latest/scale-to-width-down/20?cb=20220527142438",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/81/Spacing.png/revision/latest?cb=20210608222714"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/99/Barrel_Stabilizer.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d4/Hammerpoint_Rounds.svg"
     ],
-    "mag_size": [
-      "16"
-    ],
+    "mag_size": {
+      "normal": 16
+    },
     "rpm": [
-      "780"
+      780.0
     ],
     "dps": [
-      "156"
+      156.0
     ],
     "ttk": [
-      "1.23"
+      1.23
     ],
-    "projectile_speed": "19500",
-    "fire_modes": [
+    "projectile_speed": 19500,
+    "weapon_fire_modes": [
       "Auto"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602041205"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a8/Auto_Icon.svg"
     ],
-    "body_damage": "12",
-    "head_damage": "18",
-    "legs_damage": "11"
+    "body_damage": 12,
+    "head_damage": 18,
+    "legs_damage": 11
   },
-  "P2020": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/97/P2020_Icon.svg/revision/latest/scale-to-width-down/46?cb=20210806055114",
+  {
+    "weapon_name": "P2020",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/97/P2020_Icon.svg",
     "weapon_type": "Pistol",
     "weapon_ammo": [
       "Light"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031711"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg"
     ],
     "weapon_attachments": [
       "Extended Light Mag",
@@ -1167,41 +1213,42 @@
       "Hammerpoint Rounds"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061856",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d4/Hammerpoint_Rounds.svg/revision/latest/scale-to-width-down/20?cb=20220527142438"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/8/85/Extended_Light_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/d/d4/Hammerpoint_Rounds.svg"
     ],
-    "mag_size": [
-      "14"
-    ],
+    "mag_size": {
+      "normal": 14
+    },
     "rpm": [
-      "420"
+      420.0
     ],
     "dps": [
-      "126"
+      126.0
     ],
     "ttk": [
-      "1.57"
+      1.57
     ],
-    "projectile_speed": "18500",
-    "fire_modes": [
+    "projectile_speed": 18500,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "18",
-    "head_damage": "27",
-    "legs_damage": "16"
+    "body_damage": 18,
+    "head_damage": 27,
+    "legs_damage": 16
   },
-  "Wingman": {
-    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c4/Wingman_Icon.svg/revision/latest/scale-to-width-down/58?cb=20210806054809",
+  {
+    "weapon_name": "Wingman",
+    "weapon_img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/c/c4/Wingman_Icon.svg",
     "weapon_type": "Pistol",
     "weapon_ammo": [
       "Heavy"
     ],
     "weapon_ammo_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg/revision/latest/scale-to-width-down/22?cb=20220605031538"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg"
     ],
     "weapon_attachments": [
       "Extended Heavy Mag",
@@ -1209,31 +1256,31 @@
       "Boosted Loader"
     ],
     "weapon_attachments_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg/revision/latest/scale-to-width-down/20?cb=20210716061905",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg/revision/latest/scale-to-width-down/20?cb=20210717045702",
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/37/Boosted_Loader.svg/revision/latest/scale-to-width-down/20?cb=20220527145923"
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/9/9b/Extended_Heavy_Mag.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/27/Optics_Slot.svg",
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/37/Boosted_Loader.svg"
     ],
-    "mag_size": [
-      "6"
-    ],
+    "mag_size": {
+      "normal": 6
+    },
     "rpm": [
-      "156"
+      156.0
     ],
     "dps": [
-      "117"
+      117.0
     ],
     "ttk": [
-      "1.54"
+      1.54
     ],
-    "projectile_speed": "18000",
-    "fire_modes": [
+    "projectile_speed": 18000,
+    "weapon_fire_modes": [
       "Single"
     ],
-    "fire_modes_img": [
-      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg/revision/latest/scale-to-width-down/20?cb=20210602063254"
+    "weapon_fire_modes_img": [
+      "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3b/Single-fire_Icon.svg"
     ],
-    "body_damage": "45",
-    "head_damage": "97",
-    "legs_damage": "41"
+    "body_damage": 45,
+    "head_damage": 97,
+    "legs_damage": 41
   }
-}
+]

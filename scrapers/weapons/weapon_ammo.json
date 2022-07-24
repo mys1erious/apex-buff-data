@@ -1,0 +1,28 @@
+{
+  "ammo": [
+    {
+      "name": "Energy",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/2/2d/Energy_Ammo.svg"
+    },
+    {
+      "name": "Heavy",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/5/55/Heavy_Rounds.svg"
+    },
+    {
+      "name": "Light",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/a/a5/Light_Rounds.svg"
+    },
+    {
+      "name": "Arrows",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/f/fe/Arrows.svg"
+    },
+    {
+      "name": "Sniper",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/3/3e/Sniper_Ammo.svg"
+    },
+    {
+      "name": "Shotgun",
+      "img": "https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/42/Shotgun_Shells.svg"
+    }
+  ]
+}
