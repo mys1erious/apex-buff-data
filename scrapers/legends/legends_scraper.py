@@ -1,15 +1,16 @@
 import re
 import json
-import time
-from dataclasses import dataclass, fields
 
-from selenium.webdriver import Keys
+from dataclasses import dataclass, fields
 from selenium.webdriver.common.by import By
 
 from constants import *
-from scrapers.utils.utils import (
+from utils.utils import (
     BaseDataclass,
-    BaseScraper
+    BaseScraper,
+    cut_to_end_pattern,
+    get_attrs_from_json,
+    save_to_json
 )
 
 
@@ -58,32 +59,6 @@ class Legend(BaseDataclass):
         return data
 
 
-def get_attr_from_json(json_file, attr):
-    data = []
-
-    for obj in json_file:
-        data.append(obj[attr])
-
-    return data
-
-
-def get_attrs_from_json(json_file, attrs, attr_prefix=None):
-    data = {}
-
-    for obj in json_file:
-        for attr in attrs:
-            cur_data = get_attr_from_json(json_file, attr)
-
-            if attr_prefix:
-                key = f'{attr_prefix}_{attr}s'
-            else:
-                key = f'{attr}s'
-
-            data[key] = cur_data
-
-    return data
-
-
 class LegendsScraper(BaseScraper):
 
     def __init__(self):
@@ -109,21 +84,6 @@ class LegendsScraper(BaseScraper):
 
         self.browser.quit()
         return self.legends
-
-    def download_images(self, path, names, links, prefix=''):
-        self.browser = self.browser()
-
-        for i in range(len(names)):
-            full_name = names[i]
-
-            if isinstance(prefix, list) and len(prefix) == len(names):
-                full_name = f'{prefix[i]}_{names[i]}'
-                full_name = full_name.replace(' ', '_').lower()
-
-            self.browser.get(links[i])
-            self.browser.save_screenshot(f'{path}/{full_name}.png')
-
-        self.browser.quit()
 
     def scrape_legend_detail_page(self, legend_obj, href):
         self.browser.get(href)
@@ -154,7 +114,7 @@ class LegendsScraper(BaseScraper):
             ability_obj.cooldown = table.find_element(by=By.XPATH, value='./tbody/tr[4]/td').text
 
             full_icon_url = table.find_element(by=By.XPATH, value='./tbody/tr[1]/td/a').get_attribute('href')
-            icon_url = self.cut_end_pattern(full_icon_url, '.svg')
+            icon_url = cut_to_end_pattern(full_icon_url, '.svg')
             ability_obj.icon_url = icon_url
 
             tabber = ability.find_element(
@@ -248,12 +208,8 @@ class LegendsScraper(BaseScraper):
 
     def get_legend_icon_src(self, legend_element):
         full_src = legend_element.find_element(by=By.TAG_NAME, value='img').get_attribute('src')
-        src = self.cut_end_pattern(full_src, '.png')
+        src = cut_to_end_pattern(full_src, '.png')
         return src
-
-    def cut_end_pattern(self, text, end_pattern):
-        end = text.find(end_pattern) + len(end_pattern)
-        return text[:end]
 
     def get_legend_hrefs(self, legend_elements):
         hrefs = []
@@ -304,16 +260,29 @@ class LegendsScraper(BaseScraper):
         )
         accept_btn.click()
 
-    def export_to_json(self, path):
+    def save_to_json(self, path):
         data = {'legends': [legend.to_dict() for legend in self.legends]}
+        save_to_json(path, data)
 
-        with open(path, 'w') as f:
-            json.dump(data, f, indent=4)
+    def download_images(self, path, names, links, prefix=''):
+        self.browser = self.browser()
+
+        for i in range(len(names)):
+            full_name = names[i]
+
+            if isinstance(prefix, list) and len(prefix) == len(names):
+                full_name = f'{prefix[i]}_{names[i]}'
+                full_name = full_name.replace(' ', '_').lower()
+
+            self.browser.get(links[i])
+            self.browser.save_screenshot(f'{path}/{full_name}.png')
+
+        self.browser.quit()
 
 
-def scrape_legend_to_json(scraper):
+def scrape_legends_to_json(scraper):
     legends = scraper.scrape()
-    scraper.export_to_json(LEGENDS_JSON)
+    scraper.save_to_json(LEGENDS_JSON)
 
 
 def download_legend_icons(scraper):
@@ -355,8 +324,8 @@ def download_legend_ability_icons(scraper):
 
 if __name__ == '__main__':
     # legends_scraper = LegendsScraper()
-
-    # scrape_legend_to_json(legends_scraper)
+    # scrape_legends_to_json(legends_scraper)
+    #
     # download_legend_icons(legends_scraper)
     # download_legend_ability_icons(legends_scraper)
 
